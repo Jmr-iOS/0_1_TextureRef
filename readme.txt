@@ -8,7 +8,9 @@
 	Create texture image file for use in iOS development
 
 @section 	Procedure
-	@todo	
+	1. Open ios-linen.psd (GIMP recommended)
+	2. Change the color   (Layer 5 - "base colour" paint fill)
+	3. Don't resize?
 
 @section 	Reference
 	@title	Premium Pixels - Apple iOS Linen Texture
