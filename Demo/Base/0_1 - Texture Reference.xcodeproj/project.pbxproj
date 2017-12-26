@@ -27,7 +27,7 @@
 		D00C8B7E1FEF569C0091C651 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		D00C8B811FEF56AA0091C651 /* DataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBackup.swift; path = ../Data/DataBackup.swift; sourceTree = "<group>"; };
 		D00C8B821FEF56AA0091C651 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = ../Data/Globals.swift; sourceTree = "<group>"; };
-		D039B4B61BF4D7950024005F /* 0_0 - Empty Template (Swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0_0 - Empty Template (Swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D039B4B61BF4D7950024005F /* 0_1 - Texture Reference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0_1 - Texture Reference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		D039B4B71BF4D7950024005F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D039B4B61BF4D7950024005F /* 0_0 - Empty Template (Swift).app */,
+				D039B4B61BF4D7950024005F /* 0_1 - Texture Reference.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D039B4B51BF4D7950024005F /* 0_0 - Empty Template (Swift) */ = {
+		D039B4B51BF4D7950024005F /* 0_1 - Texture Reference */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D039B4C81BF4D7950024005F /* Build configuration list for PBXNativeTarget "0_0 - Empty Template (Swift)" */;
+			buildConfigurationList = D039B4C81BF4D7950024005F /* Build configuration list for PBXNativeTarget "0_1 - Texture Reference" */;
 			buildPhases = (
 				D039B4B21BF4D7950024005F /* Sources */,
 				D039B4B31BF4D7950024005F /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = "0_0 - Empty Template (Swift)";
+			name = "0_1 - Texture Reference";
 			productName = "0_0 - Empty Template (Swift)";
-			productReference = D039B4B61BF4D7950024005F /* 0_0 - Empty Template (Swift).app */;
+			productReference = D039B4B61BF4D7950024005F /* 0_1 - Texture Reference.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,12 +113,11 @@
 				TargetAttributes = {
 					D039B4B51BF4D7950024005F = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = HRCQBX7PVQ;
 						LastSwiftMigration = 0910;
 					};
 				};
 			};
-			buildConfigurationList = D039B4B11BF4D7950024005F /* Build configuration list for PBXProject "0_0 - Empty Template (Swift)" */;
+			buildConfigurationList = D039B4B11BF4D7950024005F /* Build configuration list for PBXProject "0_1 - Texture Reference" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -131,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D039B4B51BF4D7950024005F /* 0_0 - Empty Template (Swift) */,
+				D039B4B51BF4D7950024005F /* 0_1 - Texture Reference */,
 			);
 		};
 /* End PBXProject section */
@@ -268,9 +267,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = HRCQBX7PVQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jaostech.empty-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaostech.texture-ref";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -281,9 +281,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = HRCQBX7PVQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jaostech.empty-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaostech.texture-ref";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -292,7 +293,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D039B4B11BF4D7950024005F /* Build configuration list for PBXProject "0_0 - Empty Template (Swift)" */ = {
+		D039B4B11BF4D7950024005F /* Build configuration list for PBXProject "0_1 - Texture Reference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D039B4C61BF4D7950024005F /* Debug */,
@@ -301,7 +302,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D039B4C81BF4D7950024005F /* Build configuration list for PBXNativeTarget "0_0 - Empty Template (Swift)" */ = {
+		D039B4C81BF4D7950024005F /* Build configuration list for PBXNativeTarget "0_1 - Texture Reference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D039B4C91BF4D7950024005F /* Debug */,

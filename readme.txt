@@ -1,7 +1,7 @@
-@brief 		x
-@details 	x
+@brief 		texture generation demo for iOS
+@details 	this takes lots of effort to uncover but is quite easy once established
 @author		Justin Reina
-@date 		12/16/17
+@date 		12/26/17
 
 	
 @section 	Purpose
@@ -10,7 +10,11 @@
 @section 	Procedure
 	1. Open ios-linen.psd (GIMP recommended)
 	2. Change the color   (Layer 5 - "base colour" paint fill)
-	3. Don't resize?
+	3. Save to PNG        (ex - 'purple_example.png')
+	4. Move to Xcode	  (drag to Assets, this copies)
+	
+	@post 	see project in Demo/ for example use
+
 
 @section 	Reference
 	@title	Premium Pixels - Apple iOS Linen Texture
