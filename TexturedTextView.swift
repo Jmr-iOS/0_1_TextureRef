@@ -1,5 +1,5 @@
 /************************************************************************************************************************************/
-/** @file       TexturedLabel.swift
+/** @file       TexturedTextView.swift
  *  @project    x
  *  @brief      x
  *  @details    x
@@ -22,9 +22,9 @@
 import UIKit
 
 //@need
-class TexturedLabel :  NSObject {
+class TexturedTextView :  NSObject {
     
-    var label     : UILabel;
+    var textview  : UITextView;
     var imageView : UIImageView;
 
     
@@ -37,7 +37,7 @@ class TexturedLabel :  NSObject {
     override init() {
         
         //Init
-        label     = UILabel();
+        textview  = UITextView();
         imageView = UIImageView();
         
         //Super
@@ -46,11 +46,14 @@ class TexturedLabel :  NSObject {
         //Image
         imageView.image = UIImage(named:"textured");                /* grab texture img                                             */
         
+        //Text
+        textview.backgroundColor = nil;                             /* for imageview to be seen through                             */
+        
         //Placement
         imageView.contentMode = .topLeft;                           /* place the image in the upper left corner unscaled            */
         imageView.clipsToBounds = true;                             /* constrain image to frame boundaries                          */
         
-        print("TexturedLabel.init():         initialization complete");
+        print("TexturedTextView.init():      initialization complete");
         
         return;
     }
@@ -63,8 +66,11 @@ class TexturedLabel :  NSObject {
      */
     /********************************************************************************************************************************/
     func text(_ text : String) {
-        label.text = text;
-        print("TexturedLabel.text():         complete");
+        
+        textview.text = text;
+        
+        print("TexturedTextView.text():      complete");
+        
         return;
     }
     
@@ -76,9 +82,12 @@ class TexturedLabel :  NSObject {
      */
     /********************************************************************************************************************************/
     func frame(_ frame : CGRect) {
-        label.frame     = frame;                                    /* apply the frame to both                                      */
+        
+        textview.frame  = frame;                                    /* apply the frame to both                                      */
         imageView.frame = frame;
-        print("TexturedLabel.frame():        complete");
+        
+        print("TexturedTextView.frame():     complete");
+        
         return;
     }
     
@@ -90,8 +99,11 @@ class TexturedLabel :  NSObject {
      */
     /********************************************************************************************************************************/
     func color(_ color : UIColor) {
+        
         imageView.backgroundColor = color;                          /* set the background color of the view, setting texture color  */
-        print("TexturedLabel.color():        complete");
+        
+        print("TexturedTextView.color():     complete");
+        
         return;
     }
     
@@ -103,8 +115,8 @@ class TexturedLabel :  NSObject {
      */
     /********************************************************************************************************************************/
     func font(_ font : UIFont?) {
-        label.font = font;
-        print("TexturedLabel.font():         complete");
+        textview.font = font;
+        print("TexturedTextView.font():      complete");
         return;
     }
     
@@ -116,8 +128,8 @@ class TexturedLabel :  NSObject {
      */
     /********************************************************************************************************************************/
     func textColor(_ textColor : UIColor) {
-        label.textColor = textColor;
-        print("TexturedLabel.textColor():    complete");
+        textview.textColor = textColor;
+        print("TexturedTextView.textColor(): complete");
         return;
     }
     
@@ -129,34 +141,8 @@ class TexturedLabel :  NSObject {
      */
     /********************************************************************************************************************************/
     func textAlignment(_ textAlignment : NSTextAlignment) {
-        label.textAlignment = textAlignment;
-        print("TexturedLabel.textAlignmnt(): complete");
-        return;
-    }
-    
-    
-    /********************************************************************************************************************************/
-    /** @fcn        numberOfLines(_ numberOfLines : Int)
-     *  @brief      x
-     *  @details    x
-     */
-    /********************************************************************************************************************************/
-    func numberOfLines(_ numberOfLines : Int) {
-        label.numberOfLines = numberOfLines;
-        print("TexturedLabel.numLinescol():  complete");
-        return;
-    }
-    
-    
-    /********************************************************************************************************************************/
-    /** @fcn        lineBreakMode(_ lineBreakMode : NSLineBreakMode)
-     *  @brief      x
-     *  @details    x
-     */
-    /********************************************************************************************************************************/
-    func lineBreakMode(_ lineBreakMode : NSLineBreakMode) {
-        label.lineBreakMode = lineBreakMode;
-        print("TexturedLabel.lineBreakMod(): complete");
+        textview.textAlignment = textAlignment;
+        print("TexturedTextView.textAligt(): complete");
         return;
     }
     
@@ -170,7 +156,7 @@ class TexturedLabel :  NSObject {
     func addToView(_ view : UIView) {
 
         view.addSubview(self.imageView);                            /* add textured view to input view                              */
-        view.addSubview(self.label);                                /* add the label to input view on top                           */
+        view.addSubview(self.textview);                             /* add the text to input view on top                            */
 
         print("TexturedView.addToView():     adding to view complete");
         

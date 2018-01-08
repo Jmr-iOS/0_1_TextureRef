@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
     //UI Components
     var image : TexturedView;
-    var text  : UITextView;
+    var text  : TexturedTextView;
     var label : TexturedLabel;
 
     
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         //Init State
         image = TexturedView();
-        text  = UITextView();
+        text  = TexturedTextView();
         label = TexturedLabel();
         
         //Super
@@ -90,11 +90,12 @@ class ViewController: UIViewController {
     /********************************************************************************************************************************/
     func genTexturedView(_ view:UIView) {
   
+        //Load View
         image.frame(CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50));
         image.color(UIColor.purple);
         
+        //Add to View
         image.addToView(view);
-
         
         print("ViewController.genTxView():   textured view added");
         
@@ -111,14 +112,15 @@ class ViewController: UIViewController {
     func genTextView(_ view:UIView) {
         
         //Load Text
-        text.frame = CGRect(x: 5, y: 70, width: (UIScreen.main.bounds.width-10), height: 100);
-        text.textAlignment = .left;
-        text.textColor = UIColor.black;
-        text.backgroundColor = UIColor(patternImage: UIImage(named: "blue_example")!);              /* apply texture                */
-        text.text = "Sample text";
-        text.font = UIFont(name: ".SFUIDisplay-Medium", size: 19.0);
+        text.frame(CGRect(x: 5, y: 70, width: (UIScreen.main.bounds.width-10), height: 100));
+        text.textAlignment(.left);
+        text.textColor(UIColor.black);
+        text.color(UIColor.cyan);
+        text.text("Sample text");
+        text.font(UIFont(name: ".SFUIDisplay-Medium", size: 19.0));
         
-        view.addSubview(text);
+        //Add to View
+        text.addToView(self.view);
         
         print("ViewController.genTextView(): textView added");
         
@@ -133,7 +135,8 @@ class ViewController: UIViewController {
      */
     /********************************************************************************************************************************/
     func genLabel(view : UIView, color : UIColor) {
-            
+        
+        //Load Label
         label.text("I made a label on the screen #toogood4you");
         label.frame(CGRect(x: (self.view.center.x - 150), y: 200, width: 300, height: 325));
         label.color(UIColor.orange);
@@ -143,6 +146,7 @@ class ViewController: UIViewController {
         label.numberOfLines(0);
         label.lineBreakMode(.byWordWrapping);
         
+        //Add to View
         label.addToView(self.view);
         
         print("ViewController.genLabel():    label added");
