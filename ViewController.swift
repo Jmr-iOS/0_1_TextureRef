@@ -12,7 +12,7 @@
  * 	@notes		x
  *
  * 	@section	Opens
- * 			none listed
+ * 			TexturedView allows specification of color
  *
  * 	@section	Legal Disclaimer
  * 			All contents of this source file and/or any other Jaostech related source files are the explicit property on Jaostech
@@ -25,7 +25,7 @@ import UIKit
 class ViewController: UIViewController {
 
     //UI Components
-    var image : UIImageView;
+    var image : TexturedView;
     var text  : UITextView;
     var label : UILabel;
 
@@ -39,8 +39,8 @@ class ViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         
         //Init State
-        image    = UIImageView();
-        text    = UITextView();
+        image = TexturedView();
+        text  = UITextView();
         label = UILabel();
         
         //Super
@@ -89,11 +89,12 @@ class ViewController: UIViewController {
      */
     /********************************************************************************************************************************/
     func genTexturedView(_ view:UIView) {
+  
+        image.frame(CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 65));
+        image.image(UIImage(named:"purple_example")!);                                              /* apply texture                */
         
-        //Load Texture
-        image.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 65);
-        image.image = UIImage(named:"purple_example");                                              /* apply texture                */
-        view.addSubview(image);
+        image.addToView(view);
+
         
         print("ViewController.genTexturedView():    Textured View added");
         

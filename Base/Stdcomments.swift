@@ -1,12 +1,12 @@
 /************************************************************************************************************************************/
-/** @file		x
+/** @file       x
  *  @project    x
- * 	@brief		x
- * 	@details	x
+ *  @brief      x
+ *  @details    x
  *
- * 	@author		Justin Reina, Firmware Engineer, Jaostech
- * 	@created	x
- * 	@last rev	x
+ *  @author     Justin Reina, Firmware Engineer, Jaostech
+ *  @created    x
+ *  @last rev   x
  *
  *
  * 	@notes		x
@@ -15,29 +15,29 @@
  * 			none current
  *
  * 	@section	Legal Disclaimer
- * 			All contents of this source file and/or any other Jaostech related source files are the explicit property on Jaostech
+ * 			All contents of this source file and/or any other Jaostech related source files are the explicit property of Jaostech
  * 			Corporation. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
 
 
 /********************************************************************************************************************************/
-/**	@fcn		getTimeElapsed() -> TimerCellValue                                                                              */
+/**	@fcn        getTimeElapsed() -> TimerCellValue                                                                              */
 /*  @brief      return the elapsed time for the log AND active timer                                                            */
 /********************************************************************************************************************************/
 
 
 /********************************************************************************************************************************/
-/** @fcn		int main(void)
+/** @fcn        int main(void)
  *  @brief      x
  *  @details    x
  *
  *  @section    Purpose
  *      x
  *
- *  @param		[in]    name    descrip
+ *  @param      [in]    name    descrip
  *
- *  @param		[out]   name    descrip
+ *  @param      [out]   name    descrip
  *
  *  @return     (type) descrip
  *
@@ -47,17 +47,17 @@
  *
  *  @section    Operation
  *      x
- *		
- *  @section	Opens
+ *
+ *  @section    Opens
  *      x
  *
- *  @section	Hazards & Risks
+ *  @section    Hazards & Risks
  *      x
  *
- *	@section	Todo
+ *  @section    Todo
  *      x
  *
- *  @section	Timing
+ *  @section    Timing
  *      x
  *
  *  @note       x
@@ -67,9 +67,9 @@
 
 //------------------------------------------------------------A Delimiting Note-----------------------------------------------------//
 
-//**********************************************************************************************************************************//
-//  													      SECTION HEADER														//
-//**********************************************************************************************************************************//
+/************************************************************************************************************************************/
+//																SECTION HEADER														 *
+//***********************************************************************************************************************************/
 
 																			/*	note to the side									*/
 
