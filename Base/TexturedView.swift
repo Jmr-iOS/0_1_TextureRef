@@ -21,7 +21,7 @@
 /************************************************************************************************************************************/
 import UIKit
 
-
+//@need
 class TexturedView :  NSObject {
     
     var imageView : UIImageView;
@@ -34,13 +34,20 @@ class TexturedView :  NSObject {
     /********************************************************************************************************************************/
     override init() {
         
+        //Init
         imageView = UIImageView();
         
+        //Super
         super.init();
         
-        //@note     finalization of initialization
+        //Image
+        imageView.image = UIImage(named:"textured");                /* grab texture img                                             */
         
-        print("TexturedView.init():    initialization complete");
+        //Placement
+        imageView.contentMode = .topLeft;                           /* place the image in the upper left corner unscaled            */
+        imageView.clipsToBounds = true;                             /* constrain image to frame boundaries                          */
+        
+        print("TexturedView.init():          initialization complete");
         
         return;
     }
@@ -54,30 +61,30 @@ class TexturedView :  NSObject {
     /********************************************************************************************************************************/
     func frame(_ frame : CGRect) {
         
-        imageView.frame = frame;
+        imageView.frame = frame;                                    /* apply the frame to the imageview                             */
         
-        print("TexturedView.frame():    complete");
+        print("TexturedView.frame():         complete");
         
         return;
     }
     
     
     /********************************************************************************************************************************/
-    /** @fcn        image(_ image : UIImage)
+    /** @fcn        color(_ color : UIColor)
      *  @brief      x
      *  @details    x
      */
     /********************************************************************************************************************************/
-    func image(_ image : UIImage) {
+    func color(_ color : UIColor) {
         
-        self.imageView.image = image;
+        imageView.backgroundColor = color;                          /* set the background color of the view, setting texture color  */
         
-        print("TexturedView.image():    complete");
+        print("TexturedView.color():         complete");
         
         return;
     }
     
-
+    
     /********************************************************************************************************************************/
     /** @fcn        addToView(_ view : UIView)
      *  @brief      x
@@ -86,12 +93,11 @@ class TexturedView :  NSObject {
     /********************************************************************************************************************************/
     func addToView(_ view : UIView) {
 
-        view.addSubview(self.imageView);
+        view.addSubview(self.imageView);                            /* add textured view to input view                              */
 
-        print("TexturedView.addToView():    adding to view complete");
+        print("TexturedView.addToView():     adding to view complete");
         
         return;
     }
-
 }
 

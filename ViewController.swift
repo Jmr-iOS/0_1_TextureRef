@@ -6,7 +6,7 @@
  *
  * 	@author		Justin Reina, Firmware Engineer, Jaostech
  * 	@created	11/12/15
- * 	@last rev	1/2/18
+ * 	@last rev	1/8/18
  *
  *
  * 	@notes		x
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         
         //@todo     init code
         
-        print("ViewController.init():        Initialization complete");
+        print("ViewController.init():        initialization complete");
             
         return;
     }
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
                                                name: NSNotification.Name.UIApplicationWillResignActive,
                                                object: nil);
     
-        print("ViewController.viewDidLoad(): Load complete");
+        print("ViewController.viewDidLoad(): load complete");
             
         return;
     }
@@ -90,13 +90,13 @@ class ViewController: UIViewController {
     /********************************************************************************************************************************/
     func genTexturedView(_ view:UIView) {
   
-        image.frame(CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 65));
-        image.image(UIImage(named:"purple_example")!);                                              /* apply texture                */
+        image.frame(CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50));
+        image.color(UIColor.purple);
         
         image.addToView(view);
 
         
-        print("ViewController.genTexturedView():    Textured View added");
+        print("ViewController.genTxView():   textured view added");
         
         return;
     }
@@ -119,7 +119,8 @@ class ViewController: UIViewController {
         text.font = UIFont(name: ".SFUIDisplay-Medium", size: 19.0);
         
         view.addSubview(text);
-        print("ViewController.genTextView():    TextView added");
+        
+        print("ViewController.genTextView(): textView added");
         
         return;
     }
@@ -150,7 +151,7 @@ class ViewController: UIViewController {
         view.addSubview(newView);
         view.addSubview(label);
         
-        print("ViewController.genLabel():    Label added");
+        print("ViewController.genLabel():    label added");
         
         return;
     }

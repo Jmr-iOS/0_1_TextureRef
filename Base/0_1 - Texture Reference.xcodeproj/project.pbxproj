@@ -12,6 +12,7 @@
 		D00C8B801FEF569C0091C651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C8B7E1FEF569C0091C651 /* AppDelegate.swift */; };
 		D00C8B831FEF56AA0091C651 /* DataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C8B811FEF56AA0091C651 /* DataBackup.swift */; };
 		D00C8B841FEF56AA0091C651 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C8B821FEF56AA0091C651 /* Globals.swift */; };
+		D05BD42B2004084700046E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06741892003C96B00C03EE5 /* Assets.xcassets */; };
 		D06741872003C95F00C03EE5 /* Stdcomments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06741842003C95E00C03EE5 /* Stdcomments.swift */; };
 		D06741882003C95F00C03EE5 /* NewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06741862003C95F00C03EE5 /* NewClass.swift */; };
 		D067418B2003C98B00C03EE5 /* TexturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067418A2003C98B00C03EE5 /* TexturedView.swift */; };
@@ -145,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00C8B781FEF56910091C651 /* Base.lproj in Resources */,
+				D05BD42B2004084700046E90 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
