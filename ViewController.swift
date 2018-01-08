@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     //UI Components
     var image : TexturedView;
     var text  : UITextView;
-    var label : UILabel;
+    var label : TexturedLabel;
 
     
     /********************************************************************************************************************************/
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         //Init State
         image = TexturedView();
         text  = UITextView();
-        label = UILabel();
+        label = TexturedLabel();
         
         //Super
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil);
@@ -133,23 +133,17 @@ class ViewController: UIViewController {
      */
     /********************************************************************************************************************************/
     func genLabel(view : UIView, color : UIColor) {
+            
+        label.text("I made a label on the screen #toogood4you");
+        label.frame(CGRect(x: (self.view.center.x - 150), y: 200, width: 300, height: 325));
+        label.color(UIColor.orange);
+        label.font(UIFont(name: "MarkerFelt-Thin", size: 45));
+        label.textColor(UIColor.black);
+        label.textAlignment(.center);
+        label.numberOfLines(0);
+        label.lineBreakMode(.byWordWrapping);
         
-        label.text          = "I made a label on the screen #toogood4you";
-        label.font          = UIFont(name: "MarkerFelt-Thin", size: 45);
-        label.textColor     = UIColor.black;
-        label.textAlignment = .center;
-        label.numberOfLines = 0;
-        label.lineBreakMode = .byWordWrapping;
-        label.frame = CGRect(x: (self.view.center.x - 150), y: 200, width: 300, height: 325);
-        label.backgroundColor = UIColor(patternImage: UIImage(named: "textured")!);                 /* apply texture                */
-        
-        view.addSubview(label);
-        
-        let newView = UIView(frame: label.frame);
-        newView.backgroundColor = color;
-        
-        view.addSubview(newView);
-        view.addSubview(label);
+        label.addToView(self.view);
         
         print("ViewController.genLabel():    label added");
         
