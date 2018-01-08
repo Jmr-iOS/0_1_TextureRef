@@ -13,9 +13,9 @@
 		D00C8B831FEF56AA0091C651 /* DataBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C8B811FEF56AA0091C651 /* DataBackup.swift */; };
 		D00C8B841FEF56AA0091C651 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C8B821FEF56AA0091C651 /* Globals.swift */; };
 		D05BD42B2004084700046E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06741892003C96B00C03EE5 /* Assets.xcassets */; };
-		D05BD42D20040E6900046E90 /* TexturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BD42C20040E6900046E90 /* TexturedView.swift */; };
-		D05BD42F20040E9100046E90 /* TexturedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BD42E20040E9100046E90 /* TexturedLabel.swift */; };
-		D05BD431200414ED00046E90 /* TexturedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BD430200414ED00046E90 /* TexturedTextView.swift */; };
+		D05BD436200417A700046E90 /* TexturedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BD433200417A700046E90 /* TexturedTextView.swift */; };
+		D05BD437200417A700046E90 /* TexturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BD434200417A700046E90 /* TexturedView.swift */; };
+		D05BD438200417A700046E90 /* TexturedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BD435200417A700046E90 /* TexturedLabel.swift */; };
 		D06741872003C95F00C03EE5 /* Stdcomments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06741842003C95E00C03EE5 /* Stdcomments.swift */; };
 		D06741882003C95F00C03EE5 /* NewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06741862003C95F00C03EE5 /* NewClass.swift */; };
 /* End PBXBuildFile section */
@@ -28,9 +28,9 @@
 		D00C8B811FEF56AA0091C651 /* DataBackup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBackup.swift; path = ../Data/DataBackup.swift; sourceTree = "<group>"; };
 		D00C8B821FEF56AA0091C651 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = ../Data/Globals.swift; sourceTree = "<group>"; };
 		D039B4B61BF4D7950024005F /* 0_1 - Texture Reference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0_1 - Texture Reference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D05BD42C20040E6900046E90 /* TexturedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TexturedView.swift; path = ../TexturedView.swift; sourceTree = "<group>"; };
-		D05BD42E20040E9100046E90 /* TexturedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TexturedLabel.swift; path = ../TexturedLabel.swift; sourceTree = "<group>"; };
-		D05BD430200414ED00046E90 /* TexturedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TexturedTextView.swift; path = ../TexturedTextView.swift; sourceTree = "<group>"; };
+		D05BD433200417A700046E90 /* TexturedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TexturedTextView.swift; path = "../../../../../Ref/Libraries/Programmatic UI/TexturedTextView.swift"; sourceTree = "<group>"; };
+		D05BD434200417A700046E90 /* TexturedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TexturedView.swift; path = "../../../../../Ref/Libraries/Programmatic UI/TexturedView.swift"; sourceTree = "<group>"; };
+		D05BD435200417A700046E90 /* TexturedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TexturedLabel.swift; path = "../../../../../Ref/Libraries/Programmatic UI/TexturedLabel.swift"; sourceTree = "<group>"; };
 		D06741842003C95E00C03EE5 /* Stdcomments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stdcomments.swift; sourceTree = "<group>"; };
 		D06741852003C95E00C03EE5 /* Empty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Empty.storyboard; sourceTree = "<group>"; };
 		D06741862003C95F00C03EE5 /* NewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClass.swift; sourceTree = "<group>"; };
@@ -52,11 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				D0DFAD1F1CB158BA00555B21 /* Base */,
+				D05BD4322004179800046E90 /* Lib */,
 				D0DFAD221CB159B100555B21 /* Data */,
 				D00C8B7E1FEF569C0091C651 /* AppDelegate.swift */,
-				D05BD42E20040E9100046E90 /* TexturedLabel.swift */,
-				D05BD430200414ED00046E90 /* TexturedTextView.swift */,
-				D05BD42C20040E6900046E90 /* TexturedView.swift */,
 				D00C8B7D1FEF569C0091C651 /* ViewController.swift */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +65,16 @@
 				D039B4B61BF4D7950024005F /* 0_1 - Texture Reference.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D05BD4322004179800046E90 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D05BD435200417A700046E90 /* TexturedLabel.swift */,
+				D05BD433200417A700046E90 /* TexturedTextView.swift */,
+				D05BD434200417A700046E90 /* TexturedView.swift */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 		D0DFAD1F1CB158BA00555B21 /* Base */ = {
@@ -166,12 +174,12 @@
 				D06741872003C95F00C03EE5 /* Stdcomments.swift in Sources */,
 				D00C8B7F1FEF569C0091C651 /* ViewController.swift in Sources */,
 				D00C8B831FEF56AA0091C651 /* DataBackup.swift in Sources */,
-				D05BD42F20040E9100046E90 /* TexturedLabel.swift in Sources */,
 				D06741882003C95F00C03EE5 /* NewClass.swift in Sources */,
-				D05BD431200414ED00046E90 /* TexturedTextView.swift in Sources */,
 				D00C8B801FEF569C0091C651 /* AppDelegate.swift in Sources */,
-				D05BD42D20040E6900046E90 /* TexturedView.swift in Sources */,
+				D05BD437200417A700046E90 /* TexturedView.swift in Sources */,
 				D00C8B841FEF56AA0091C651 /* Globals.swift in Sources */,
+				D05BD438200417A700046E90 /* TexturedLabel.swift in Sources */,
+				D05BD436200417A700046E90 /* TexturedTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
